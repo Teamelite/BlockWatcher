@@ -1,0 +1,75 @@
+name: BlockWatcher
+version: 1.0
+author: mfunGamer
+main: io.teamelite.Main
+commands:
+  hopper-info:
+    usage: /hopper-info [amount]
+    description: Lists the said amount of hoppers.
+permissions:
+  hopperinfo:
+    description: Grants access to /hopper-info.
+    default: op
+  build.*:
+    description: Grants access to all Blocks.
+    children:
+      build.redstone.*: true
+  build.redstone.*:
+    description: Grants access to all Redstone-Blocks.
+    children:
+      build.redstone.wire : true
+      build.redstone.redstone : true
+      build.redstone.block : true
+      build.redstone.comperator : true
+      build.redstone.comperator_on : true
+      build.redstone.comperator_off : true
+      build.redstone.lamp_on : true
+      build.redstone.lamp_off : true
+      build.redstone.ore : true
+      build.redstone.torch_off : true
+      build.redstone.torch_on : true
+      build.redstone.diode : true
+      build.redstone.diode_on : true
+      build.redstone.diode_off : true
+  build.redstone.wire:
+    description: Grants access to Redstone-Wires.
+    default: op
+  build.redstone.redstone:
+    description: Grants access to Redstone.
+    default: op
+  build.redstone.block:
+    description: Grants access to Redstone-Blocks.
+    default: op
+  build.redstone.comperator:
+    description: Grants access to Redstone-Comperators.
+    default: op
+  build.redstone.comperator_on:
+    description: Grants access to Redstone-Comperators_ON.
+    default: op
+  build.redstone.comperator_off:
+    description: Grants access to Redstone-Comperators_OFF.
+    default: op
+  build.redstone.lamp_on:
+    description: Grants access to Redstone-Lamp_ON.
+    default: op
+  build.redstone.lamp_off:
+    description: Grants access to Redstone-Lamp_OFF.
+    default: op
+  build.redstone.ore:
+    description: Grants access to Redstone-Ore.
+    default: op
+  build.redstone.torch_off:
+    description: Grants access to Redstone-Torch_OFF.
+    default: op
+  build.redstone.torch_on:
+    description: Grants access to Redstone-Torch_ON.
+    default: op
+  build.redstone.diode:
+    description: Grants access to Redstone-Diode.
+    default: op
+  build.redstone.diode_on:
+    description: Grants access to Redstone-Diode_ON.
+    default: op
+  build.redstone.diode_off:
+    description: Grants access to Redstone-Diode_OFF.
+    default: op
